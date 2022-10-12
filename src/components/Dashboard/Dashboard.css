@@ -1,0 +1,41 @@
+a.active {
+    color: #2E5BFF;
+    font-weight: 500;
+     background: rgba(46, 91, 255, .1);
+  }
+  a.active::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    background-color: #2E5BFF;
+  }
+  
+  a:hover{
+    background-color: rgba(46, 91, 255, .1);
+  }
+  
+  nav{
+    transition:all .2s;
+  }
+  nav.expanded .link-label {
+    display: none;
+  }
+  nav.expanded {
+    width: 66px;
+  }
+  
+  nav.expanded ul li{
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav.expanded ul li a{
+    align-items: center;
+    justify-content: center;
+  }
+  nav.expanded ul li a svg{
+   margin: 0;
+  }
